@@ -3,13 +3,14 @@ const { createNewNote, findById, deleteNote } = require("../../lib/notes.js");
 const { notesArray } = require("../../data/db.json");
 const shortid = require('shortid');
 
+// A route to display the notes
 router.get('/notes', (req, res) => {
     let results = notesArray;
     res.json(results);
 });
 
+// A route for giving unique ID to the notes and creating it
 router.post("/notes", (req, res) => {
-    // set id 
     req.body.id = shortid.generate();
 
     const note = createNewNote(req.body, notesArray);
