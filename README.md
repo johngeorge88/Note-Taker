@@ -14,7 +14,7 @@ An application that allows you to write, save and delete notes to organize thoug
 * Run the application using the command line
 
 ## Deployed application:
-You can also run the application from this link: 
+You can also run the application from this link: https://evening-everglades-04658.herokuapp.com/notes
 
 ## Usage 
 Run (node server) or (npm start)
